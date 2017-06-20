@@ -12,3 +12,6 @@
 - Go to **( http://localhost:4200/ )** .
 
 
+You must to be able to request any site with ajax from any source. If you use Google Chrome I recommend you using an Allow-Control-Allow-Origin extension: 
+
+- https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?utm_source=chrome-app-launcher-info-dialog
