@@ -3,7 +3,7 @@
 ### Getting Started
 
 - Open a Shell/Terminal/Comand-Line.
-- Clone this repository to your machine.
+- Clone this repository to your machine  **`( git clone https://github.com/ACCPinDrop/Front-End.git )`**.
 - Go inside of your new folder **`( cd Front-End )`**.
 - Switch to my branch **`( git chekout pindrop_requests )`**
 - Run **npm install** .
