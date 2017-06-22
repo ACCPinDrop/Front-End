@@ -10,29 +10,16 @@ import 'rxjs/add/operator/map';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-	data: string;
+	categories$;
 	postdata: string;
 	newCategory: string;
-	constructor (private _http: Http) {}
-  
-  test() {
-    if (this.data){
-      return true;
-    } else {
-      return false;
-    }
-  }
 
+	constructor (private _http: Http) {}  
 
   getData() {
     this.newCategory = '';
-    return this._http.get('http://199.101.49.43/categories/')
-              .map(res => res.json())
-              .subscribe(
-                data => this.data = data,
-                error => alert(error),
-                () => console.log("Finished!")
-  	          );
+    this.categories$ = this._http.get('http://199.101.49.43/categories/')
+              .map(res => res.json());
   }
 
   postData() {
@@ -65,6 +52,15 @@ export class AppComponent {
                         () => console.log("Deleted!")
   	                  );
   }
+
+  test() {
+    if (this.categories$){
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 
 }
 //  console.log(people[0].id)
