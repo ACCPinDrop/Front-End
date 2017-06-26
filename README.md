@@ -1,17 +1,28 @@
-# FrontEnd Pindrop
+# Pindrop
 
-### Getting Started
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
 
-- Open a Shell/Terminal/Comand-Line.
-- Clone this repository to your machine  **`( git clone https://github.com/ACCPinDrop/Front-End.git )`**.
-- Go inside of your new folder **`( cd Front-End )`**.
-- Switch to my branch **`( git chekout pindrop_requests )`**
-- Run **npm install** .
-- Run **ng server** .
-- Open a browser.
-- Go to **( http://localhost:4200/ )** .
+## Development server
 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-You must to be able to request any site with ajax from any source. If you use Google Chrome I recommend you using an Allow-Control-Allow-Origin extension: 
+## Code scaffolding
 
-- https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?utm_source=chrome-app-launcher-info-dialog
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
