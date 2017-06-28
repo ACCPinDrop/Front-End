@@ -66,14 +66,6 @@ class App extends Component {
         </div>
 
 
-
-
-
-      //<section style={styleObj} for="hello-world">
-       // <h2 onClick={this.toggleColor.bind(this)}>{this.state.color}</h2>  
-       // <input value={this.state.color} onChange={this.changeColor.bind(this)}/>  
-       // <h2 className={}>{this.props.name}</h2>
-      // </section>
     );
   }
 }
