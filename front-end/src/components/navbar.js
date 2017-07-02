@@ -4,10 +4,10 @@ import { Navbar, Nav } from 'react-bootstrap/lib';
 
 import { Link } from 'react-router-dom'
 
-class NavTop extends Component {
-    render() {
-        return (
-            
+class AppNavbar extends Component {
+    render()  {
+        console.log("HERE!!!");
+        return (        
             <Navbar default collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
@@ -27,5 +27,4 @@ class NavTop extends Component {
     }
 }
 
-export default NavTop;
-
+export default AppNavbar;

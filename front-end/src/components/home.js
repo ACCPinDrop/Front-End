@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import AppMap from './App_Map'
+import AppMap from './map'
 
 
 class Home extends Component {
     render() {
         return (
-        	<div>
+        	<div className="home-page">
                 <h1>Home Page!</h1>
                 <AppMap />
             </div>

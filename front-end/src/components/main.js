@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 import { Route, Switch } from 'react-router-dom'
 
-import Home from './Home';
+import Home from './home';
 import Test2 from './Test2';
 import Test3 from './Test3';
 
-class Main extends Component {
+class MainPage extends Component {
     render() {
         return (
         	<Switch>
@@ -18,7 +18,7 @@ class Main extends Component {
     }
 }
 
-export default Main;
+export default MainPage;
 
 
 
