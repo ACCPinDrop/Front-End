@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 
 import { Map, TileLayer } from 'react-leaflet';
@@ -11,19 +10,42 @@ const stamenTonerAttr = 'Map tiles by <a href="http://stamen.com">Stamen Design<
 
 
 
+
 class AppMap extends Component {
 
     constructor(props) {
-    super(props);
+        super(props);
 
-  }
-  render() {    
-    return (
-            <Map  className="markercluster-map" center={[51.785039, -2.275221]} zoom={10} maxZoom={18}>
+        this.state = {
+            posts: []
+        };
+    }
+    
+    componentDidMount() {
+        axios.get('http://199.101.49.43/locations/')
+        .then(res => {
+            const posts = res.data.map(obj => obj);
+            this.setState({ posts });
+        });
+    }
+
+    render() { 
+        return (
+        	<Map  className="markercluster-map" center={[42.670083, -73.781158]} zoom={11} maxZoom={18}>
                 <TileLayer attribution={stamenTonerAttr} url={stamenTonerTiles}/>
-            </Map>       
-    );
-  }
+                
+                <MarkerClusterGroup
+                    markers={this.state.posts.map(post => [{'lat': post.latitude, 'lng': post.longitude}][0])}
+                    wrapperOptions={{enableDefaultStyle: true}}
+                />
+
+            </Map>   
+        );
+    }
 }
 
 export default AppMap;
+
+
+
+    

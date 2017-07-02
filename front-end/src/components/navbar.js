@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 
 class AppNavbar extends Component {
     render()  {
-        console.log("HERE!!!");
         return (        
             <Navbar default collapseOnSelect>
                 <Navbar.Header>
