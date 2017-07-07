@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 class Post extends Component {
   render() {
     return (
 
-<div className="col-md-4 col-md-offset-4">
+        <div className="col-md-4 col-md-offset-4">
             <form action="" method="post">
 
             <h1> Submit an Event </h1>

@@ -35,7 +35,7 @@ class AppMap extends Component {
                 <TileLayer attribution={stamenTonerAttr} url={stamenTonerTiles}/>
                 
                 <MarkerClusterGroup
-                    markers={this.state.posts.map(post => [{'lat': post.latitude, 'lng': post.longitude}][0])}
+                    markers={this.state.posts.map(post => [{'lat': post.latitude, 'lng': post.longitude, options: {title: post.venue_name}}][0])}
                     wrapperOptions={{enableDefaultStyle: true}}
                 />
 

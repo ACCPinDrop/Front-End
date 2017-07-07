@@ -8,6 +8,7 @@ import './styles/index.css';
 import './styles/app.css';
 import './styles/map.css';
 import './styles/home.css';
+import './styles/carousel.css';
 
 const container = document.getElementById('container');
 

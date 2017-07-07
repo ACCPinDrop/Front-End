@@ -2,17 +2,27 @@ import React, { Component } from 'react';
 
 import { Route, Switch } from 'react-router-dom'
 
-import Home from './home';
-import Test2 from './Test2';
-import Test3 from './Test3';
+import home from './home';
+import contact from './contact';
+import event from './event';
+import group from './group';
+import organizer from './organizer';
+import post from './post';
+import signin from './signin';
+import signup from './signup';
 
 class MainPage extends Component {
     render() {
         return (
         	<Switch>
-                <Route exact path='/' component={Home}/>
-                <Route path='/test2' component={Test2}/>
-                <Route path='/test3' component={Test3}/>
+                <Route exact path='/' component={home}/>
+                <Route path='/contact' component={contact}/>
+                <Route path='/event' component={event}/>
+                <Route path='/group' component={group}/>
+                <Route path='/organizer' component={organizer}/>
+                <Route path='/post' component={post}/>
+                <Route path='/signin' component={signin}/>
+                <Route path='/signup' component={signup}/>
             </Switch>
         );
     }
