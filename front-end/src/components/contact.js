@@ -25,7 +25,7 @@ class Contact extends Component {
                     <textarea className="form-control"  name="message"></textarea>
                 </div>
                 
-                <button className="btn btn-block btn-success" type="submit">Submit</button>
+                <button className="btn btn-block btn-lg btn-success" type="submit">Submit</button>
             </form>            
         </div>
 
