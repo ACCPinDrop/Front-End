@@ -26,7 +26,7 @@ class Signup extends Component {
                     <input className="form-control" type="password" for="password" name="password" />
                 </div>
                 
-                <button className="btn btn-block btn-success" type="submit">Sign Up</button>
+                <button className="btn btn-block btn-lg btn-success" type="submit">Sign Up</button>
             </form>            
         </div>
 

@@ -9,6 +9,10 @@ import './styles/app.css';
 import './styles/map.css';
 import './styles/home.css';
 import './styles/carousel.css';
+import './styles/post.css';
+import './styles/signin.css';
+import './styles/signup.css';
+import './styles/contact.css';
 
 const container = document.getElementById('container');
 

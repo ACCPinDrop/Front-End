@@ -16,7 +16,7 @@ class Post extends Component {
                 </div>
                 <div className="form-group"> 
                     <h3 >Description:</h3>
-                    <textarea className="form-control"  name="description"></textarea>
+                    <textarea className="form-control" name="description"></textarea>
                 </div>
                 <div className="form-group"> 
                     <h3 >Category:</h3>
@@ -94,7 +94,7 @@ class Post extends Component {
                     <input className="form-control" type="file" for="image" name="image" />
                 </div>
                 
-                <button className="btn btn-block btn-success" type="submit">Post Event</button>
+                <button className="btn btn-block btn-lg btn-success" type="submit">Post Event</button>
             </form>            
         </div>
 
