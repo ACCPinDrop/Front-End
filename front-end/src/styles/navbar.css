@@ -1,0 +1,19 @@
+
+.navbar {
+	font-style: Futura, Arial, san-serif;
+	font-size: 140%;
+	background-color: #0610D5;
+	color: #ffffff;
+	
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+.form-group{
+	font-style: Futura, Arial, san-serif;
+	font-size: 140%;
+	color: #02020D;
+}
