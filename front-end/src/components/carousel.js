@@ -6,7 +6,7 @@ class carousel extends Component {
         <div className="container">
 
             <div className="row">
-                <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div className="well">
                         <div id="myCarousel" className="carousel slide" data-ride="carousel">
                             <ol className="carousel-indicators">
@@ -18,80 +18,80 @@ class carousel extends Component {
                                 <div className="item active">
                                     <div className="row">
                                         <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                            <a href="#x" className="thumbnail"><img src="http://placehold.it/250x250" alt="Image"/></a>
+                                            <a href="/" className="thumbnail"><img src="http://placehold.it/250x250" alt=""/></a>
                                             <h2>Lorem Ipsum</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">more</a></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="/">more</a></p>
                                         </div>
                                         <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                            <a href="#x" className="thumbnail"><img src="http://placehold.it/250x250" alt="Image" /></a>
+                                            <a href="/" className="thumbnail"><img src="http://placehold.it/250x250" alt="" /></a>
                                             <h2>Lorem Ipsum</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">more</a></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="/">more</a></p>
                                         </div>
 
                                         <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                                            <a href="#x" className="thumbnail"><img src="http://placehold.it/250x250" alt="Image" /></a>
+                                            <a href="/" className="thumbnail"><img src="http://placehold.it/250x250" alt="" /></a>
                                             <h2>Lorem Ipsum</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">more</a></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="/">more</a></p>
                                         </div>
 
                                         <div className="col-sm-6 col-md-3 col-lg-3">
-                                            <a href="#x" className="thumbnail"><img src="http://placehold.it/250x250" alt="Image" /></a>
+                                            <a href="/" className="thumbnail"><img src="http://placehold.it/250x250" alt="" /></a>
                                             <h2>Lorem Ipsum</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">more</a></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="/">more</a></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="item">
                                     <div className="row">
                                         <div className="col-sm-6 col-md-3 col-lg-3">
-                                            <a href="#x" className="thumbnail"><img src="http://placehold.it/250x250" alt="Image"  /></a>
+                                            <a href="/" className="thumbnail"><img src="http://placehold.it/250x250" alt=""  /></a>
                                             <h2>Lorem Ipsum</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">more</a></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="/">more</a></p>
                                         </div>
 
                                         <div className="col-sm-6 col-md-3 col-lg-3">
-                                            <a href="#x" className="thumbnail"><img src="http://placehold.it/250x250" alt="Image" /></a>
+                                            <a href="/" className="thumbnail"><img src="http://placehold.it/250x250" alt="" /></a>
                                             <h2>Lorem Ipsum</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">more</a></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="/">more</a></p>
                                         </div>
 
                                         <div className="col-sm-6 col-md-3 col-lg-3">
-                                            <a href="#x" className="thumbnail"><img src="http://placehold.it/250x250" alt="Image"/></a>
+                                            <a href="/" className="thumbnail"><img src="http://placehold.it/250x250" alt=""/></a>
                                             <h2>Lorem Ipsum</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">more</a></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="/">more</a></p>
                                         </div>
 
                                         <div className="col-sm-6 col-md-3 col-lg-3">
-                                            <a href="#x" className="thumbnail"><img src="http://placehold.it/250x250" alt="Image" /></a>
+                                            <a href="/" className="thumbnail"><img src="http://placehold.it/250x250" alt="" /></a>
                                             <h2>Lorem Ipsum</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">more</a></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="/">more</a></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="item">
                                     <div className="row">
                                         <div className="col-sm-6 col-md-3 col-lg-3">
-                                            <a href="#x" className="thumbnail"><img src="http://placehold.it/250x250" alt="Image"  /></a>
+                                            <a href="/" className="thumbnail"><img src="http://placehold.it/250x250" alt=""  /></a>
                                             <h2>Lorem Ipsum</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">more</a></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="/">more</a></p>
                                         </div>
 
                                         <div className="col-sm-6 col-md-3 col-lg-3">
-                                            <a href="#x" className="thumbnail"><img src="http://placehold.it/250x250" alt="Image"  /></a>
+                                            <a href="/" className="thumbnail"><img src="http://placehold.it/250x250" alt=""  /></a>
                                             <h2>Lorem Ipsum</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">more</a></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="/">more</a></p>
                                         </div>
 
                                         <div className="col-sm-6 col-md-3 col-lg-3">
-                                            <a href="#x" className="thumbnail"><img src="http://placehold.it/250x250" alt="Image"  /></a>
+                                            <a href="/" className="thumbnail"><img src="http://placehold.it/250x250" alt=""  /></a>
                                             <h2>Lorem Ipsum</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">more</a></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="/">more</a></p>
                                         </div>
 
                                         <div className="col-sm-6 col-md-3 col-lg-3">
-                                            <a href="#x" className="thumbnail"><img src="http://placehold.it/250x250" alt="Image"  /></a>
+                                            <a href="/" className="thumbnail"><img src="http://placehold.it/250x250" alt=""  /></a>
                                             <h2>Lorem Ipsum</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="#">more</a></p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<a href="/">more</a></p>
                                         </div>
                                     </div>
                                 </div>

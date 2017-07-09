@@ -11,6 +11,8 @@ import post from './post';
 import signin from './signin';
 import signup from './signup';
 
+
+
 class MainPage extends Component {
     render() {
         return (
@@ -18,7 +20,7 @@ class MainPage extends Component {
                 <Route exact path='/' component={home}/>
                 <Route path='/contact' component={contact}/>
                 <Route path='/event' component={event}/>
-                <Route path='/group' component={group}/>
+                <Route path='/group' component={group} />
                 <Route path='/organizer' component={organizer}/>
                 <Route path='/post' component={post}/>
                 <Route path='/signin' component={signin}/>
