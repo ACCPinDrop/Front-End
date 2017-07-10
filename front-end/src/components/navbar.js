@@ -15,7 +15,7 @@ class AppNavbar extends Component {
                         <span className="icon-bar"></span>
                     </button>
 
-                    <Link to="/" className="navbar-brand"><img src="Front-End\front-end\src\public\PindropLogo.png"></img></Link>
+                    <Link to="/" className="navbar-brand"><img src="PindropLogo.png"></img></Link>
                     </div>
 
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                    
