@@ -13,6 +13,7 @@ import './styles/post.css';
 import './styles/signin.css';
 import './styles/signup.css';
 import './styles/contact.css';
+import './styles/navbar.css';
 import './styles/event.css';
 import './styles/group.css';
 import './styles/organizer.css';

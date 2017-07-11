@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 
 import AppMap from './map'
+import Carousel from './carousel'
 
 
 class Home extends Component {
     render() {
         return (
         	<div className="home-page">
-                <h1>PinDrop</h1>
                 <AppMap />
+                <Carousel />
             </div>
         );
     }

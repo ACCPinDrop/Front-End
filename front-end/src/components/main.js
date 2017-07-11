@@ -17,7 +17,7 @@ class MainPage extends Component {
         	<Switch>
                 <Route exact path='/' component={home}/>
                 <Route path='/contact' component={contact}/>
-                <Route path='/event' component={event}/>
+                <Route path='/event/:info' component={event}/>
                 <Route path='/group' component={group}/>
                 <Route path='/organizer' component={organizer}/>
                 <Route path='/post' component={post}/>
