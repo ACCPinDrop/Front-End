@@ -4,6 +4,7 @@ import L from 'leaflet';
 import { Map, TileLayer } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
 
+
 function getEvents() {
     return fetch('http://199.101.49.43/events/');
 }
@@ -17,25 +18,10 @@ async function getCombo() {
     const combo = [];
     for (var i=0; i < events.length; i++) {
         const locationResponse = await makeRequest(events[i].event_location);
-        const location = await locationResponse.json();
-        const gourpResponse = await makeRequest(events[i].event_group);
-        const group = await gourpResponse.json();
-        const organizers = [];              
-        const categories = [];  
-
-        for (var u=0; u < group.group_organizers.length; u++){
-            const organizerResponse = await makeRequest(group.group_organizers[u]);
-            const organizer = await organizerResponse.json();
-            organizers.push(organizer);
-        }
-        for (var o=0; o < group.group_categories.length; o++){
-            const categoryResponse = await makeRequest(group.group_categories[o]);
-            const category = await categoryResponse.json();
-            categories.push(category);
-        }  
-        combo.push({'event': events[i], 'location': location, 'group': group, 'organizers': organizers, 'categories': categories});
+        const location = await locationResponse.json(); 
+        combo.push({'event': events[i], 'location': location});
     }
-    console.log(combo);
+    // console.log(combo);
     return combo;
 }
 
@@ -66,10 +52,15 @@ class AppMap extends Component {
 
 
     render() {  
+        const wrapperOptions = {
+            enableDefaultStyle: true,
+            disableDefaultAnimation: false,
+            removeDuplicates: true
+        };
         // Define object with Leaflet.markercluster options
         const markerclusterOptions = {
-            showCoverageOnHover: false,
-            spiderfyDistanceMultiplier: 3,
+            showCoverageOnHover: true,
+            spiderfyDistanceMultiplier: 2,
             // Setting custom icon for clustere group
             // https://github.com/Leaflet/Leaflet.markercluster#customising-the-clustered-markers
             iconCreateFunction: (cluster) => {
@@ -82,12 +73,15 @@ class AppMap extends Component {
         };
 
         // that function returns Leaflet.Popup
-        function getLeafletPopup(eventName, groupName) {
+        function getLeafletPopup(event_name, event_start_time, event_date, event_location) {
             return L.popup({minWidth: 200, closeButton: true})
             .setContent(`
-                <div>
-                    <h3>${ eventName }</h3>
-                    <p>I am a ${ groupName } popup.</p>
+                <div id="popupDiv">
+                    <h4 id="popupName"><a href="/event/${ event_name }:$${ event_location }:$${ event_date }:$${ event_start_time }" 
+                    id="popupLink">${ event_name }</a></h4>
+                    <p>${ event_location }</p>
+                    <p>Date: ${ event_date }</p>
+                    <p>Start Time: ${ event_start_time }</p>
                 </div>
             `);
         }
@@ -96,13 +90,13 @@ class AppMap extends Component {
             return {
                 'lat': data.location.latitude, 
                 'lng': data.location.longitude,
-                popup: getLeafletPopup(data.event.event_name, data.group.group_name)
+                popup: getLeafletPopup(data.event.event_name, data.event.event_start_time, data.event.event_date, data.location.address)
             }
         });
 
         return (
             <div>
-                <Map  className="markercluster-map" center={[42.670083, -73.781158]} zoom={11} maxZoom={18}>
+                <Map  className="markercluster-map" center={[42.675888, -73.817893]} zoom={12} maxZoom={18}>
                     <TileLayer
                     url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -110,7 +104,10 @@ class AppMap extends Component {
                     <MarkerClusterGroup
                             markers={markers}
                             options={markerclusterOptions}
-                            wrapperOptions={{enableDefaultStyle: true}}
+                            // onMarkerClick={(marker) => console.log(marker)}
+                            // onClusterClick={(cluster) => console.log(cluster, cluster.getAllChildMarkers())}
+                            // onPopupClose={(popup) => console.log(popup, popup.getContent())}
+                            wrapperOptions={wrapperOptions}
                         />
                 </Map>
             </div>

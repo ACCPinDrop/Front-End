@@ -1,19 +1,32 @@
-
+.dropdown-menu {
+	background-color: #0610D5;
+}
 .navbar {
 	font-style: Futura, Arial, san-serif;
 	font-size: 140%;
-	background-color: #0610D5;
-	color: #ffffff;
-	
+	background-color: #0610D5;	
 }
-.navbar-brand>img {
-  height: 100%;
-  padding: 15px;
-  width: auto;
+.navPin {
+	color: #ffffff !important;
+}
+.logo > img {
+	position: absolute;
+    height: 133%;
+    width: auto;
 }
 
 .form-group{
 	font-style: Futura, Arial, san-serif;
 	font-size: 140%;
 	color: #02020D;
+}
+
+.brand {
+	position: absolute;
+	left: 53px;
+	top: 17px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #ffffff !important;
+	text-decoration: none !important;
 }

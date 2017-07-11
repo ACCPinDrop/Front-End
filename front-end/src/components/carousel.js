@@ -6,7 +6,7 @@ class carousel extends Component {
         <div className="container">
 
             <div className="row">
-                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div className="carousel col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div className="well">
                         <div id="myCarousel" className="carousel slide" data-ride="carousel">
                             <ol className="carousel-indicators">

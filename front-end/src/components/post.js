@@ -4,7 +4,7 @@ class Post extends Component {
   render() {
     return (
 
-        <div className="col-md-4 col-md-offset-4">
+        <div className="col-md-8 col-md-offset-2">
             <form action="" method="post">
 
             <h1> Submit an Event </h1>
@@ -40,14 +40,6 @@ class Post extends Component {
                     <h3>End Time:</h3>
                     <input className="form-control" type="time" for="end" name="end-time" />
                 </div> 
-                <div className="form-group">
-                    <h4>Recurrence <input type="checkbox" name="recurrence"/></h4>
-                </div>
-                <div className="form-group">
-                    <h4>Recurrence Description</h4>
-                    <input className="form-control" type="text" for="recur-desc" name="recur-desc" />
-                </div>
-
 
                 <div className="form-group">
                     <h3>Venue:</h3>
